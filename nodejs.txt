@@ -24,4 +24,13 @@ we use the require() function  to accept the incoming information.
 if we use the require() function  without actually exporting anything .. we will get an empty object.
 
 
+Now we will learn how can we transfer whole directories information as objects to a file in some other directory.
+    -- first after all the files with has been created, we have to create an index.js(the naming convention matters here) file in the same directory where all the data is stored and then require every data over there.
+
+    -- now we can directly use the Folder name or directory name to access the data that we are exporting from the index.js file in that folder.
+
+
+
+
+
  
