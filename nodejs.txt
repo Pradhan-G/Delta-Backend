@@ -1,0 +1,22 @@
+Notes : Backend - 1
+
+What is Node.js ?
+ -- not a language,library or framework.
+ -- Javascript Runtime Environment.
+ -- It is used for server side Programming.
+
+After Installing node.js we can use "node" command to start the runtime Environment.
+we can use .help command to know more about the commands.
+
+How to Run JS files in node ?
+    -- Make sure you are in teh correct directory
+    -- lets say the name is script.js 
+    -- to run it we will use the command "node script.js"
+
+
+Process 
+    process - This object provides information about, and control over, the current Node.js process.
+    process.argv - returns an array containing the command-line arguments passed when the node.js process was launched. Ex - node script.js hello bye
+
+
+ 
