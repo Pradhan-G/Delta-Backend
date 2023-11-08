@@ -1,0 +1,63 @@
+Library vs Framework
+
+A library is a collection of pre-written code that can be used to perform specific tasks eg - axios
+
+a Framework is a set of pre-written code that provides a structure for developing software applications eg - express
+
+What is express ?
+
+a Node.js web application framework that helps us to make web applications
+It is used for server side programming
+
+1. listen for incoming request
+2. parse the data
+3. match response with routes
+4. sends the response
+
+steps to create a server side express js app.
+
+first we need to go to the desired location and do the npm init command.
+next we need to install express in the folder using npm i express command.
+Now we need to create the indexl.js app so and this js app will be the gateway for server side rendering .
+
+then we need to require the express package and call it agai because it will return a value
+
+How to send a response ?
+
+To send a response we can use the app.send() method
+app.use((req, res) => {
+console.log("Request received");
+res.send("This is a basic response");
+});
+
+There are some important methods in this that we need to talk about
+
+    req.query
+
+will contain the search query that we provide with the url.
+
+    req.params
+
+will contain the the varaible values that we provide with the url.
+
+    res.send()
+
+will send the data to the user in form of HTML data, string, number. usually used to give the response of the req.
+
+    app.get
+
+used to define the routes and the what happen when the user enters the route.
+
+app.get("/:username/:id", (req, res) => {
+res.send("We can also store data in variables that we will pass.");
+let { username, id } = req.params;
+});
+
+app.get("/search", (req, res) => {
+console.log(req.query);
+res.send("No Results yet");
+});
+
+app.get("/apple", (req, res) => {
+res.send("You are at the apple Path");
+});
