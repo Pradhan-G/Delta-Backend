@@ -25,3 +25,30 @@ we can use tags to perform specific tasks these tags are
 %>     Plain ending tag
 -%>    Trim-mode ('newline slurp') tag, trims following newline
 _%>    ‘Whitespace Slurping’ ending tag, removes all whitespace after it
+
+
+EJS Conditional Statements
+
+Adding Conditions inside EJS
+
+alright now this is interesting we can see how js with returning html elements works in ejs. so whatever part is the js code we have to enclose it inside the <% %> tag and html will be written as it is... 
+
+Lets take an example
+
+this is the simple js code with html 
+
+if(diceRoll == 6) {
+    <h1> Good Job there ! </h1>
+}
+
+however we dont write it like above we write it like below
+
+<% if(diceRoll == 6) {  %>
+    <h1> Good Job there ! </h1>
+<% } %>
+
+
+
+Loops in EJS
+
+
