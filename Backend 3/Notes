@@ -67,3 +67,10 @@ syntax is
 
 app.use(express.static(path.join(__dirname,"public")));
 
+
+To include any part of the page that we want to reuse everywhere lets say the header or the footer we can use the following syntax after creating a folder named includes inside views folder and then creating files inside that folder
+
+<%- include("includes/head.ejs")  %>
+<%- include("includes/footer.ejs")  %>
+
+inside the html code
