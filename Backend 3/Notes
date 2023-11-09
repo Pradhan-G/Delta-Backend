@@ -60,3 +60,10 @@ now we will remove all the manually typed data and use the data.json file to imp
 
 
 
+Serving Static Files
+there should be a public folder in our file strructure in order to add css and js files and in those folder should remai the css and js file
+
+syntax is 
+
+app.use(express.static(path.join(__dirname,"public")));
+
