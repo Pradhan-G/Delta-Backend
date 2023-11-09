@@ -13,19 +13,18 @@ app.get("/", (req, res) => {
   res.render("home.ejs");
 });
 
+app.get("*", (req, res) => {
+  res.render("nopagefound.ejs");
+});
+
 app.get("/ig/:username", (req, res) => {
-  const followers = [
-    "abhishek",
-    "bob",
-    "harshit",
-    "steve",
-    "mansha",
-    "david",
-    "Mridul",
-    "josh",
-  ];
+  //We must import the data to use it
+
+  const instaData = require("./data.json");
   let { username } = req.params;
-  res.render("instagram.ejs", { username, followers });
+  let data = instaData[username];
+  console.log(data);
+  res.render("instagram.ejs", { data });
 });
 
 app.listen(port, () => {

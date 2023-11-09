@@ -51,4 +51,12 @@ however we dont write it like above we write it like below
 
 Loops in EJS
 
+<% for (let x of followers) { %>
+    <h4 style="display: inline-block"><%= x %></h4>
+    <% } %>
+
+added data.json file because data will will be incoming in json format so we must know how to deal with the data coming in json format.
+now we will remove all the manually typed data and use the data.json file to import data dynamically.
+
+
 
