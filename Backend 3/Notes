@@ -1,0 +1,9 @@
+EJS
+
+Templating
+
+EJS(Embedded Javascript Templates)
+
+Ejs is a simple templating language that lets you generate HTML Markup with plain JAVASCRIPT.
+
+With EJS we can create HTML markup templates in which we can write javascript code too
