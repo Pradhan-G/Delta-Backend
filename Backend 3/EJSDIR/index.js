@@ -5,6 +5,13 @@ const port = 8080;
 
 app.set("view engine", "ejs"); // Used to set a lot of things but here using that we are setting the view engine to ejs.
 
+app.get("/rolldice", (req, res) => {
+  let diceVal = Math.floor(Math.random() * 6) + 1; // Assuming that this data is coming from the database and we catch it in a varaible.
+  res.render("rolldice.ejs", { num: diceVal, diceVal }); // this way we have just passed the data fromm our js to our ejs file and now we are ready to use the num key in the ejs file. which we will.
+
+  // We can also use the same key and value names but we prefer to send the varibale name as key value pair as shown after the comma, will work ust fine.
+});
+
 app.get("/", (req, res) => {
   res.render("home.ejs");
 }); // setting the home directory here and using the response.render to render the template called home.ejs
